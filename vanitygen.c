@@ -492,6 +492,7 @@ main(int argc, char **argv)
 					"GAME : GameCredits : G\n"
 					"GAP : Gapcoin : G\n"
 					"GCR : Global Currency Reserve : G\n"
+					"GENIX : Genix : G\n"
 					"GRC : GridcoinResearch : R or S\n"
 					"GRLC : Garlicoin : G\n"
 					"GRN : GreenCoin : G\n"
@@ -1498,6 +1499,14 @@ main(int argc, char **argv)
 					privtype = 128;
 					break;
 			}
+                        else
+                        if (strcmp(optarg, "GENIX") == 0) {
+                                fprintf(stderr,
+                                        "Generating GENIX Address\n");
+                                        addrtype = 38;
+                                        privtype = 127;
+                                        break;
+                        }
 			else
 			if (strcmp(optarg, "RITO")== 0) {
 				fprintf(stderr,

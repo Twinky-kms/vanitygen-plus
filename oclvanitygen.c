@@ -229,7 +229,8 @@ main(int argc, char **argv)
 					"GAME : GameCredits : G\n"
 					"GAP : Gapcoin : G\n"
 					"GCR : Global Currency Reserve : G\n"
-					"GRC : GridcoinResearch : R or S\n"
+					"GENIX : Genix : G\n"
+                                        "GRC : GridcoinResearch : R or S\n"
 					"GRLC : Garlicoin : G\n"
 					"GRN : GreenCoin : G\n"
 					"GRS : Groestlcoin : F\n"
@@ -623,6 +624,14 @@ main(int argc, char **argv)
 					"Generating MYNT Address\n");
 					addrtype = 50;
 					privtype = 128;
+					break;
+			}
+			else
+                        if (strcmp(optarg, "GENIX") == 0) {
+                        	fprintf(stderr,
+					"Generating GENIX Address\n");
+					addrtype = 38;
+					privtype = 127;
 					break;
 			}
 			else
